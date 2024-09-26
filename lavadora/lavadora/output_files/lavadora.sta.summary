@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'reloj'
+Slack : -2.663
+TNS   : -97.469
+
+Type  : Slow 1200mV 85C Model Setup 'bloque1:U3|divisorfrecuencia:u_d|out1'
+Slack : -1.969
+TNS   : -14.504
+
+Type  : Slow 1200mV 85C Model Setup 'bloque1:U3|contador_lavadora:u_c|proceso_habilitado'
+Slack : -0.073
+TNS   : -0.198
+
+Type  : Slow 1200mV 85C Model Hold 'bloque1:U3|divisorfrecuencia:u_d|out1'
+Slack : -0.344
+TNS   : -0.344
+
+Type  : Slow 1200mV 85C Model Hold 'reloj'
+Slack : -0.099
+TNS   : -0.099
+
+Type  : Slow 1200mV 85C Model Hold 'bloque1:U3|contador_lavadora:u_c|proceso_habilitado'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'reloj'
+Slack : -3.000
+TNS   : -63.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'bloque1:U3|divisorfrecuencia:u_d|out1'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'bloque1:U3|contador_lavadora:u_c|proceso_habilitado'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Setup 'reloj'
+Slack : -2.317
+TNS   : -79.543
+
+Type  : Slow 1200mV 0C Model Setup 'bloque1:U3|divisorfrecuencia:u_d|out1'
+Slack : -1.697
+TNS   : -12.232
+
+Type  : Slow 1200mV 0C Model Setup 'bloque1:U3|contador_lavadora:u_c|proceso_habilitado'
+Slack : 0.048
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'bloque1:U3|divisorfrecuencia:u_d|out1'
+Slack : -0.266
+TNS   : -0.266
+
+Type  : Slow 1200mV 0C Model Hold 'reloj'
+Slack : -0.134
+TNS   : -0.134
+
+Type  : Slow 1200mV 0C Model Hold 'bloque1:U3|contador_lavadora:u_c|proceso_habilitado'
+Slack : 0.313
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'reloj'
+Slack : -3.000
+TNS   : -63.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'bloque1:U3|divisorfrecuencia:u_d|out1'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'bloque1:U3|contador_lavadora:u_c|proceso_habilitado'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Setup 'reloj'
+Slack : -1.097
+TNS   : -30.596
+
+Type  : Fast 1200mV 0C Model Setup 'bloque1:U3|divisorfrecuencia:u_d|out1'
+Slack : -0.637
+TNS   : -4.464
+
+Type  : Fast 1200mV 0C Model Setup 'bloque1:U3|contador_lavadora:u_c|proceso_habilitado'
+Slack : 0.396
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'bloque1:U3|divisorfrecuencia:u_d|out1'
+Slack : -0.256
+TNS   : -0.256
+
+Type  : Fast 1200mV 0C Model Hold 'reloj'
+Slack : -0.177
+TNS   : -0.177
+
+Type  : Fast 1200mV 0C Model Hold 'bloque1:U3|contador_lavadora:u_c|proceso_habilitado'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'reloj'
+Slack : -3.000
+TNS   : -67.317
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'bloque1:U3|divisorfrecuencia:u_d|out1'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'bloque1:U3|contador_lavadora:u_c|proceso_habilitado'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------
