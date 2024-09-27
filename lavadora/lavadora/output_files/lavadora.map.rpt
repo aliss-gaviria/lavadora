@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lavadora
-Wed Sep 25 21:44:24 2024
+Thu Sep 26 17:08:55 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -10,18 +10,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for Inferred Entity Instance: bloque1:U3|separador:u_s|lpm_divide:Mod0
- 11. Parameter Settings for Inferred Entity Instance: bloque1:U3|separador:u_s|lpm_divide:Div0
- 12. Port Connectivity Checks: "bloque1:U3|separador:u_s"
- 13. Port Connectivity Checks: "bloque1:U3|divisorfrecuencia:u_d"
- 14. Port Connectivity Checks: "bloque1:U3"
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -47,20 +36,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Sep 25 21:44:23 2024      ;
+; Analysis & Synthesis Status        ; Failed - Thu Sep 26 17:08:55 2024          ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; lavadora                                   ;
 ; Top-level Entity Name              ; lavadora                                   ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 249                                        ;
-;     Total combinational functions  ; 249                                        ;
-;     Dedicated logic registers      ; 72                                         ;
-; Total registers                    ; 72                                         ;
-; Total pins                         ; 36                                         ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0                                          ;
-; Embedded Multiplier 9-bit elements ; 0                                          ;
-; Total PLLs                         ; 0                                          ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -162,383 +151,47 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
-+-----------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path              ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                         ; Library ;
-+-----------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------+---------+
-; ../../load/load.vhd                           ; yes             ; User VHDL File               ; C:/Users/alizz/OneDrive/Documentos/VHDL/load/load.vhd                                ;         ;
-; ../decobcdvelocidad.vhd                       ; yes             ; User VHDL File               ; C:/Users/alizz/OneDrive/Documentos/VHDL/lavadora/decobcdvelocidad.vhd                ;         ;
-; ../../contador_lavadora/contador_lavadora.vhd ; yes             ; User VHDL File               ; C:/Users/alizz/OneDrive/Documentos/VHDL/contador_lavadora/contador_lavadora.vhd      ;         ;
-; ../separador.vhd                              ; yes             ; User VHDL File               ; C:/Users/alizz/OneDrive/Documentos/VHDL/lavadora/separador.vhd                       ;         ;
-; ../divisorfrecuencia.vhd                      ; yes             ; User VHDL File               ; C:/Users/alizz/OneDrive/Documentos/VHDL/lavadora/divisorfrecuencia.vhd               ;         ;
-; ../../bloque1/bloque1.vhd                     ; yes             ; User VHDL File               ; C:/Users/alizz/OneDrive/Documentos/VHDL/bloque1/bloque1.vhd                          ;         ;
-; ../../encendido/encendido.vhd                 ; yes             ; User VHDL File               ; C:/Users/alizz/OneDrive/Documentos/VHDL/encendido/encendido.vhd                      ;         ;
-; ../../ciclo_oper/ciclo_oper.vhd               ; yes             ; User VHDL File               ; C:/Users/alizz/OneDrive/Documentos/VHDL/ciclo_oper/ciclo_oper.vhd                    ;         ;
-; ../decobcda7segmentos.vhd                     ; yes             ; User VHDL File               ; C:/Users/alizz/OneDrive/Documentos/VHDL/lavadora/decobcda7segmentos.vhd              ;         ;
-; ../../ciclo_operacion/ciclo_operacion.vhd     ; yes             ; User VHDL File               ; C:/Users/alizz/OneDrive/Documentos/VHDL/ciclo_operacion/ciclo_operacion.vhd          ;         ;
-; lavadora.vhd                                  ; yes             ; User VHDL File               ; C:/Users/alizz/OneDrive/Documentos/VHDL/lavadora/lavadora/lavadora.vhd               ;         ;
-; lpm_divide.tdf                                ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_divide.tdf                        ;         ;
-; abs_divider.inc                               ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/abs_divider.inc                       ;         ;
-; sign_div_unsign.inc                           ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/sign_div_unsign.inc                   ;         ;
-; aglobal131.inc                                ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                        ;         ;
-; db/lpm_divide_f8m.tdf                         ; yes             ; Auto-Generated Megafunction  ; C:/Users/alizz/OneDrive/Documentos/VHDL/lavadora/lavadora/db/lpm_divide_f8m.tdf      ;         ;
-; db/sign_div_unsign_dkh.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/alizz/OneDrive/Documentos/VHDL/lavadora/lavadora/db/sign_div_unsign_dkh.tdf ;         ;
-; db/alt_u_div_53f.tdf                          ; yes             ; Auto-Generated Megafunction  ; C:/Users/alizz/OneDrive/Documentos/VHDL/lavadora/lavadora/db/alt_u_div_53f.tdf       ;         ;
-; db/add_sub_unc.tdf                            ; yes             ; Auto-Generated Megafunction  ; C:/Users/alizz/OneDrive/Documentos/VHDL/lavadora/lavadora/db/add_sub_unc.tdf         ;         ;
-; db/add_sub_vnc.tdf                            ; yes             ; Auto-Generated Megafunction  ; C:/Users/alizz/OneDrive/Documentos/VHDL/lavadora/lavadora/db/add_sub_vnc.tdf         ;         ;
-; db/lpm_divide_9gm.tdf                         ; yes             ; Auto-Generated Megafunction  ; C:/Users/alizz/OneDrive/Documentos/VHDL/lavadora/lavadora/db/lpm_divide_9gm.tdf      ;         ;
-; db/sign_div_unsign_akh.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/alizz/OneDrive/Documentos/VHDL/lavadora/lavadora/db/sign_div_unsign_akh.tdf ;         ;
-; db/alt_u_div_v2f.tdf                          ; yes             ; Auto-Generated Megafunction  ; C:/Users/alizz/OneDrive/Documentos/VHDL/lavadora/lavadora/db/alt_u_div_v2f.tdf       ;         ;
-+-----------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 249         ;
-;                                             ;             ;
-; Total combinational functions               ; 249         ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 66          ;
-;     -- 3 input functions                    ; 41          ;
-;     -- <=2 input functions                  ; 142         ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 155         ;
-;     -- arithmetic mode                      ; 94          ;
-;                                             ;             ;
-; Total registers                             ; 72          ;
-;     -- Dedicated logic registers            ; 72          ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 36          ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-; Maximum fan-out node                        ; reloj~input ;
-; Maximum fan-out                             ; 60          ;
-; Total fan-out                               ; 940         ;
-; Average fan-out                             ; 2.39        ;
-+---------------------------------------------+-------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                          ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                ; Library Name ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |lavadora                                    ; 249 (0)           ; 72 (0)       ; 0           ; 0            ; 0       ; 0         ; 36   ; 0            ; |lavadora                                                                                                                          ; work         ;
-;    |bloque1:U3|                              ; 182 (0)           ; 34 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|bloque1:U3                                                                                                               ; work         ;
-;       |contador_lavadora:u_c|                ; 24 (24)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|bloque1:U3|contador_lavadora:u_c                                                                                         ; work         ;
-;       |decobcda7segmentos:u_deco_dece|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|bloque1:U3|decobcda7segmentos:u_deco_dece                                                                                ; work         ;
-;       |decobcda7segmentos:u_deco_uni|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|bloque1:U3|decobcda7segmentos:u_deco_uni                                                                                 ; work         ;
-;       |divisorfrecuencia:u_d|                ; 46 (46)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|bloque1:U3|divisorfrecuencia:u_d                                                                                         ; work         ;
-;       |separador:u_s|                        ; 98 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|bloque1:U3|separador:u_s                                                                                                 ; work         ;
-;          |lpm_divide:Div0|                   ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|bloque1:U3|separador:u_s|lpm_divide:Div0                                                                                 ; work         ;
-;             |lpm_divide_9gm:auto_generated|  ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|bloque1:U3|separador:u_s|lpm_divide:Div0|lpm_divide_9gm:auto_generated                                                   ; work         ;
-;                |sign_div_unsign_akh:divider| ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|bloque1:U3|separador:u_s|lpm_divide:Div0|lpm_divide_9gm:auto_generated|sign_div_unsign_akh:divider                       ; work         ;
-;                   |alt_u_div_v2f:divider|    ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|bloque1:U3|separador:u_s|lpm_divide:Div0|lpm_divide_9gm:auto_generated|sign_div_unsign_akh:divider|alt_u_div_v2f:divider ; work         ;
-;          |lpm_divide:Mod0|                   ; 55 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|bloque1:U3|separador:u_s|lpm_divide:Mod0                                                                                 ; work         ;
-;             |lpm_divide_f8m:auto_generated|  ; 55 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|bloque1:U3|separador:u_s|lpm_divide:Mod0|lpm_divide_f8m:auto_generated                                                   ; work         ;
-;                |sign_div_unsign_dkh:divider| ; 55 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|bloque1:U3|separador:u_s|lpm_divide:Mod0|lpm_divide_f8m:auto_generated|sign_div_unsign_dkh:divider                       ; work         ;
-;                   |alt_u_div_53f:divider|    ; 55 (55)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|bloque1:U3|separador:u_s|lpm_divide:Mod0|lpm_divide_f8m:auto_generated|sign_div_unsign_dkh:divider|alt_u_div_53f:divider ; work         ;
-;    |ciclo_oper:U2|                           ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|ciclo_oper:U2                                                                                                            ; work         ;
-;    |ciclo_operacion:U1|                      ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|ciclo_operacion:U1                                                                                                       ; work         ;
-;    |decobcdvelocidad:U4|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|decobcdvelocidad:U4                                                                                                      ; work         ;
-;    |decobcdvelocidad:U5|                     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|decobcdvelocidad:U5                                                                                                      ; work         ;
-;    |encendido:U0|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|encendido:U0                                                                                                             ; work         ;
-;    |load:U6|                                 ; 50 (50)           ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lavadora|load:U6                                                                                                                  ; work         ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 72    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 4     ;
-; Number of registers using Asynchronous Clear ; 34    ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 37    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |lavadora|load:U6|counter[10]                     ;
-; 12:1               ; 5 bits    ; 40 LEs        ; 30 LEs               ; 10 LEs                 ; Yes        ; |lavadora|bloque1:U3|contador_lavadora:u_c|cnt[5] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: bloque1:U3|separador:u_s|lpm_divide:Mod0 ;
-+------------------------+----------------+-------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                            ;
-+------------------------+----------------+-------------------------------------------------+
-; LPM_WIDTHN             ; 7              ; Untyped                                         ;
-; LPM_WIDTHD             ; 7              ; Untyped                                         ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
-; LPM_PIPELINE           ; 0              ; Untyped                                         ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                         ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                         ;
-; CBXI_PARAMETER         ; lpm_divide_f8m ; Untyped                                         ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                         ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                         ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                      ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                    ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                    ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                  ;
-+------------------------+----------------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: bloque1:U3|separador:u_s|lpm_divide:Div0 ;
-+------------------------+----------------+-------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                            ;
-+------------------------+----------------+-------------------------------------------------+
-; LPM_WIDTHN             ; 7              ; Untyped                                         ;
-; LPM_WIDTHD             ; 4              ; Untyped                                         ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
-; LPM_PIPELINE           ; 0              ; Untyped                                         ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                         ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                         ;
-; CBXI_PARAMETER         ; lpm_divide_9gm ; Untyped                                         ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                         ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                         ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                      ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                    ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                    ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                  ;
-+------------------------+----------------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "bloque1:U3|separador:u_s"                                                                     ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; unidades[6..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; decenas[6..4]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "bloque1:U3|divisorfrecuencia:u_d"                                                   ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; out2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------+
-; Port Connectivity Checks: "bloque1:U3"  ;
-+-------+-------+----------+--------------+
-; Port  ; Type  ; Severity ; Details      ;
-+-------+-------+----------+--------------+
-; reset ; Input ; Info     ; Stuck at VCC ;
-+-------+-------+----------+--------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:14     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Sep 25 21:43:49 2024
+    Info: Processing started: Thu Sep 26 17:08:52 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lavadora -c lavadora
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file /users/alizz/onedrive/documentos/vhdl/load/load.vhd
-    Info (12022): Found design unit 1: load-arch
-    Info (12023): Found entity 1: load
-Info (12021): Found 2 design units, including 1 entities, in source file /users/alizz/onedrive/documentos/vhdl/lavadora/decobcdvelocidad.vhd
+Warning (12019): Can't analyze file -- file ../../load/load.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /users/alizz/onedrive/documentos/github/lavadora/lavadora/decobcdvelocidad.vhd
     Info (12022): Found design unit 1: decobcdvelocidad-arch_decobcdvelocidad
     Info (12023): Found entity 1: decobcdvelocidad
-Info (12021): Found 2 design units, including 1 entities, in source file /users/alizz/onedrive/documentos/vhdl/contador_lavadora/contador_lavadora.vhd
-    Info (12022): Found design unit 1: contador_lavadora-arch1
-    Info (12023): Found entity 1: contador_lavadora
-Info (12021): Found 2 design units, including 1 entities, in source file /users/alizz/onedrive/documentos/vhdl/lavadora/separador.vhd
+Warning (12019): Can't analyze file -- file ../../contador_lavadora/contador_lavadora.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /users/alizz/onedrive/documentos/github/lavadora/lavadora/separador.vhd
     Info (12022): Found design unit 1: separador-arch_separador
     Info (12023): Found entity 1: separador
-Info (12021): Found 2 design units, including 1 entities, in source file /users/alizz/onedrive/documentos/vhdl/lavadora/divisorfrecuencia.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/alizz/onedrive/documentos/github/lavadora/lavadora/divisorfrecuencia.vhd
     Info (12022): Found design unit 1: divisorfrecuencia-arch_divisorfrecuencia
     Info (12023): Found entity 1: divisorfrecuencia
-Info (12021): Found 2 design units, including 1 entities, in source file /users/alizz/onedrive/documentos/vhdl/bloque1/bloque1.vhd
-    Info (12022): Found design unit 1: bloque1-arch_bloque1
-    Info (12023): Found entity 1: bloque1
-Info (12021): Found 2 design units, including 1 entities, in source file /users/alizz/onedrive/documentos/vhdl/encendido/encendido.vhd
-    Info (12022): Found design unit 1: encendido-arch_encendido
-    Info (12023): Found entity 1: encendido
-Info (12021): Found 2 design units, including 1 entities, in source file /users/alizz/onedrive/documentos/vhdl/ciclo_oper/ciclo_oper.vhd
-    Info (12022): Found design unit 1: ciclo_oper-arch_ciclo_oper
-    Info (12023): Found entity 1: ciclo_oper
-Info (12021): Found 2 design units, including 1 entities, in source file /users/alizz/onedrive/documentos/vhdl/lavadora/decobcda7segmentos.vhd
+Warning (12019): Can't analyze file -- file ../../bloque1/bloque1.vhd is missing
+Warning (12019): Can't analyze file -- file ../../encendido/encendido.vhd is missing
+Warning (12019): Can't analyze file -- file ../../ciclo_oper/ciclo_oper.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /users/alizz/onedrive/documentos/github/lavadora/lavadora/decobcda7segmentos.vhd
     Info (12022): Found design unit 1: decobcda7segmentos-arch_decobcda7segmentos
     Info (12023): Found entity 1: decobcda7segmentos
-Info (12021): Found 2 design units, including 1 entities, in source file /users/alizz/onedrive/documentos/vhdl/ciclo_operacion/ciclo_operacion.vhd
-    Info (12022): Found design unit 1: ciclo_operacion-arch_ciclo_operacion
-    Info (12023): Found entity 1: ciclo_operacion
+Warning (12019): Can't analyze file -- file ../../ciclo_operacion/ciclo_operacion.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file lavadora.vhd
     Info (12022): Found design unit 1: lavadora-arch_lavadora
     Info (12023): Found entity 1: lavadora
 Info (12127): Elaborating entity "lavadora" for the top level hierarchy
-Info (12128): Elaborating entity "encendido" for hierarchy "encendido:U0"
-Warning (10492): VHDL Process Statement warning at encendido.vhd(15): signal "enc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (12128): Elaborating entity "ciclo_oper" for hierarchy "ciclo_oper:U2"
 Info (12128): Elaborating entity "decobcdvelocidad" for hierarchy "decobcdvelocidad:U4"
-Info (12128): Elaborating entity "ciclo_operacion" for hierarchy "ciclo_operacion:U1"
-Info (12128): Elaborating entity "bloque1" for hierarchy "bloque1:U3"
-Warning (10036): Verilog HDL or VHDL warning at bloque1.vhd(17): object "clk" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at bloque1.vhd(18): object "out2" assigned a value but never read
-Info (12128): Elaborating entity "divisorfrecuencia" for hierarchy "bloque1:U3|divisorfrecuencia:u_d"
-Info (12128): Elaborating entity "contador_lavadora" for hierarchy "bloque1:U3|contador_lavadora:u_c"
-Info (12128): Elaborating entity "separador" for hierarchy "bloque1:U3|separador:u_s"
-Info (12128): Elaborating entity "decobcda7segmentos" for hierarchy "bloque1:U3|decobcda7segmentos:u_deco_uni"
-Info (12128): Elaborating entity "load" for hierarchy "load:U6"
-Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "bloque1:U3|separador:u_s|Mod0"
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "bloque1:U3|separador:u_s|Div0"
-Info (12130): Elaborated megafunction instantiation "bloque1:U3|separador:u_s|lpm_divide:Mod0"
-Info (12133): Instantiated megafunction "bloque1:U3|separador:u_s|lpm_divide:Mod0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "7"
-    Info (12134): Parameter "LPM_WIDTHD" = "7"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_f8m.tdf
-    Info (12023): Found entity 1: lpm_divide_f8m
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_dkh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_dkh
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_53f.tdf
-    Info (12023): Found entity 1: alt_u_div_53f
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_unc.tdf
-    Info (12023): Found entity 1: add_sub_unc
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_vnc.tdf
-    Info (12023): Found entity 1: add_sub_vnc
-Info (12130): Elaborated megafunction instantiation "bloque1:U3|separador:u_s|lpm_divide:Div0"
-Info (12133): Instantiated megafunction "bloque1:U3|separador:u_s|lpm_divide:Div0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "7"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9gm.tdf
-    Info (12023): Found entity 1: lpm_divide_9gm
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_akh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_akh
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_v2f.tdf
-    Info (12023): Found entity 1: alt_u_div_v2f
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "giro_bcd[6]" is stuck at VCC
-    Warning (13410): Pin "velocidad_bcd[6]" is stuck at VCC
-Info (286030): Timing-Driven Synthesis is running
-Warning (20013): Ignored assignments for entity "DE0_Default" -- entity does not exist in design
-    Warning (20014): Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity DE0_Default -section_id "Root Region" was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity DE0_Default -section_id "Root Region" was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name LL_ROUTING_REGION OFF -entity DE0_Default -section_id "Root Region" was ignored
-    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 14622752 -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE0_Default -section_id Top was ignored
-Warning (20013): Ignored assignments for entity "Lab3a_s1" -- entity does not exist in design
-    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity Lab3a_s1 -section_id Top was ignored
-Warning (20013): Ignored assignments for entity "Lab3b" -- entity does not exist in design
-    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity Lab3b -section_id Top was ignored
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 285 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 31 output pins
-    Info (21061): Implemented 249 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 84 warnings
-    Info: Peak virtual memory: 4671 megabytes
-    Info: Processing ended: Wed Sep 25 21:44:24 2024
-    Info: Elapsed time: 00:00:35
-    Info: Total CPU time (on all processors): 00:00:06
+Error (12006): Node instance "U0" instantiates undefined entity "encendido" File: C:/Users/alizz/OneDrive/Documentos/GitHub/lavadora/lavadora/lavadora/lavadora.vhd Line: 93
+Error (12006): Node instance "U2" instantiates undefined entity "ciclo_oper" File: C:/Users/alizz/OneDrive/Documentos/GitHub/lavadora/lavadora/lavadora/lavadora.vhd Line: 94
+Error (12006): Node instance "U1" instantiates undefined entity "ciclo_operacion" File: C:/Users/alizz/OneDrive/Documentos/GitHub/lavadora/lavadora/lavadora/lavadora.vhd Line: 97
+Error (12006): Node instance "U3" instantiates undefined entity "bloque1" File: C:/Users/alizz/OneDrive/Documentos/GitHub/lavadora/lavadora/lavadora/lavadora.vhd Line: 98
+Error (12006): Node instance "U6" instantiates undefined entity "load" File: C:/Users/alizz/OneDrive/Documentos/GitHub/lavadora/lavadora/lavadora/lavadora.vhd Line: 99
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 5 errors, 7 warnings
+    Error: Peak virtual memory: 4642 megabytes
+    Error: Processing ended: Thu Sep 26 17:08:55 2024
+    Error: Elapsed time: 00:00:03
+    Error: Total CPU time (on all processors): 00:00:03
 
 
